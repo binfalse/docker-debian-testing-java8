@@ -9,5 +9,7 @@ MAINTAINER martin scharm
 # install java and texlive as a dependency
 RUN apt-get -y update && \
     apt-get install -y \
-            openjdk-8-jre
+            openjdk-8-jre \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
