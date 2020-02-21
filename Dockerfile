@@ -1,7 +1,7 @@
 # regular DEBIAN TESTING w/ JAVA
 
 # let's use a debian as a base
-FROM tianon/debian-roll:testing
+FROM debian:oldstable
 
 # see http://binfalse.de/contact/ if you want to contact me
 MAINTAINER martin scharm
